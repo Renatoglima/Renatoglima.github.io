@@ -1,7 +1,28 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
+
+
+:root {
+    --color-back-document: #;
+    --color-back-left: #;
+    --color-back-right: #;
+    --color-name: #;
+    --color-right-titles: #;
+    --color-right-subtitles: #;
+    --color-right-text: #;
+    --color-left-titles: #;
+    --color-left-subtitles: #;
+    --color-left-text: #;
+
+    --font-name: 'Josefin Sans', cursive;
+    --font-title: 'Josefin Sans', sans-serif;
+    --font-text: 'Jost', sans-serif;
+}
 
 * {
     margin: 0;
@@ -22,13 +43,13 @@
 .left-section {
     grid-column: span 2;
     height: 100%;
-    background-color: #999999;
+    background-color: var(--color-back-left);
 }
 
 .right-section {
     grid-column: span 5;
     height: 100%;
-    background-color: #424a50;
+    background-color: var(--color-back-right);
     border-radius: 0px 60px 0px 0px;
 }
 
@@ -48,25 +69,25 @@
 }
 
 .name {
-    color: #D6DBDF;
+    color: var(--color-name);
     font-size: 30px;
     letter-spacing: 2px;    
-    font-family: 'Hurricane', cursive;
+    font-family: var(--font-name);
 }
 
 .profession {
-    color: #eeeeee;
+    color: var(--color-titles);
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
-    font-family: 'Josefin Sans', cursive;
+    font-family: var(--font-title);
 }
 
 /* .contact-info { border-bottom: 2px solid #1B2631; } */
 .left-title {
-    color: #eeeeee;
+    color: var(--color-left-titles);
     font-size: 20px;
-    font-family: 'Josefin Sans', cursive;
+    font-family: var(--font-title);
 }
 
 .contact-info ul {
@@ -76,14 +97,14 @@
 .contact-info ul li,
 .references ul li {
     padding: .4rem 0;
-    color: #eeeeee;
+    color: var(--color-left-titles);
 }
 
 .contact-info ul li i,
 .references ul li i {
     padding-right: 1rem;
     font-size: 18px;
-    color: #eeeeee;
+    color: var(--color-left-titles);
 }
 
 .skills ul {
@@ -91,7 +112,7 @@
 }
 .skills ul li p {
     padding: .4rem 0;
-    color: #eeeeee;
+    color: var(--color-left-titles);
 }
 
 .right-section-contents {
@@ -99,8 +120,8 @@
 }
 
 .right-title {
-    color: #eeeeee;
-    font-family: 'Josefin Sans', cursive;
+    color: var(--color-right-titles);
+    font-family: var(--font-title);
     text-transform: uppercase;
 }
 
@@ -109,7 +130,7 @@
 }
 .about-me-contents {
     font-size: 18px;
-    color: #eeeeee;
+    color: var(--color-right-text);
 }
 .experience-contents,
 .education-contents,
@@ -117,7 +138,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-bottom: 2rem;
-    color: #F1F8FD;
+    color: #2279b8;
 }
 
 .exp-company-name,
