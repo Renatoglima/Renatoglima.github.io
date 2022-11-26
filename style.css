@@ -8,16 +8,16 @@
 
 
 :root {
-    --color-back-document: #;
-    --color-back-left: #;
-    --color-back-right: #;
-    --color-name: #;
-    --color-right-titles: #;
-    --color-right-subtitles: #;
-    --color-right-text: #;
-    --color-left-titles: #;
-    --color-left-subtitles: #;
-    --color-left-text: #;
+    --color-back-document: #BA616B;
+    --color-back-left: white;
+    --color-back-right: #61BA74;
+    --color-name: white;
+    --color-right-titles: white;
+    --color-right-subtitles: white;
+    --color-right-text: white;
+    --color-left-titles: #61BA74;
+    --color-left-subtitles: #61BA74;
+    --color-left-text: #61BA74;
 
     --font-name: 'Josefin Sans', cursive;
     --font-title: 'Josefin Sans', sans-serif;
@@ -55,28 +55,30 @@
 
 .left-section-contents{
     padding: 2rem 2rem;
+    color: var(--color-back-left);
 }
 
 .profile {
     width: 100%;
     border-bottom: 2px solid #eeeeee;
-   
+
 }
 
 .profile .profile-image {
     width: 100%;
     border-radius: 100%;
+
 }
 
 .name {
-    color: var(--color-name);
+    color: var(--color-left-titles);
     font-size: 30px;
     letter-spacing: 2px;    
-    font-family: var(--font-name);
+    font-family: var(--font-title);
 }
 
 .profession {
-    color: var(--color-titles);
+    color: var(--color-left-subtitles);
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
@@ -97,18 +99,19 @@
 .contact-info ul li,
 .references ul li {
     padding: .4rem 0;
-    color: var(--color-left-titles);
+    color: var(--color-left-text);
 }
 
 .contact-info ul li i,
 .references ul li i {
     padding-right: 1rem;
     font-size: 18px;
-    color: var(--color-left-titles);
+    color: var(--color-left-text);
 }
 
 .skills ul {
     padding-top: 1.5rem;
+    color: var(--color-left-text);
 }
 .skills ul li p {
     padding: .4rem 0;
@@ -138,26 +141,29 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-bottom: 2rem;
-    color: #2279b8;
+    color: var(--color-right-subtitles);
 }
 
 .exp-company-name,
 .education-school-name,
 .awards-company-name {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
+    margin-top: 10%; 
 }
 
 .exp-time-period,
-.educationp-time-period,
+.education-time-period,
 .awards-time-period {
     font-size: 18px;
+    margin-top: 10%; 
 }
 
 .exp-position,
 .education-subject,
 .awards-name {
     font-size: 25px;
+    margin-top: 10%; 
 }
 
 .exp-desc,
@@ -165,4 +171,5 @@
 .awards-desc {
     font-size: 16px;
     padding-left: 5px;
+    
 }
