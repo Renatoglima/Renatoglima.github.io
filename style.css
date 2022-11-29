@@ -116,7 +116,7 @@ body {
 
 .contact-info ul li,
 .references ul li {
-    padding: .4rem 0;
+    padding: 0.4rem 0;
     color: var(--color-left-text);
     display: flex;
     align-items: center;
@@ -162,7 +162,7 @@ body {
 }
 
 .gap {
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
 }
 .about-me-contents {
     font-size: 18px;
