@@ -17,7 +17,7 @@
     --color-left-subtitles: #61BA74;
     --color-left-text: #61BA74;
 
-    --color-contraste: white;
+    --color-contraste: rgb(255, 255, 255);
 
     --font-name: 'Josefin Sans', cursive;
     --font-title: 'Josefin Sans', sans-serif;
@@ -38,8 +38,6 @@
 
 body {
     background-color: var(--color-contraste);
-    height: 0vh;
-    top: 0%;
 }
 
 #darkmodeToggle {
@@ -328,10 +326,12 @@ input:checked + label svg.moon {
 @media screen and (max-width:780px) {
     .left-section {
         grid-column: span 3;
+        width: 100%;
     }
     
     .right-section {
         grid-column: span 4;
+        width: 100%;
     }
     
 }
