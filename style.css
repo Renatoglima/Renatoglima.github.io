@@ -37,7 +37,12 @@
 }
 
 body {
+    height: 100vh;
     background-color: var(--color-contraste);
+    background-repeat: repeat-y;
+    background-attachment: fixed; /* ou scroll */
+    background-position: center center;
+    background-size: cover;
 }
 
 #darkmodeToggle {
@@ -54,7 +59,6 @@ label {
 	box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
 	cursor: pointer;
 	transition: 0.3s;
-    padding: 0px;
 }
 
 label:after {
@@ -75,7 +79,6 @@ input {
 	width: 0;
 	height: 0;
 	visibility: hidden;
-    padding: 0px;
 }
 
 input:checked + label {
